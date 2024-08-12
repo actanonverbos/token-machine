@@ -3,13 +3,13 @@ import Footer from 'src/components/Footer';
 import TransactionWrapper from 'src/components/TransactionWrapper';
 import WalletWrapper from 'src/components/WalletWrapper';
 import { COMMUNITY_LINK } from 'src/links';
-import OnchainkitSvg from 'src/svg/CommunitySvg';
 import { useAccount } from 'wagmi';
 import LoginButton from '../components/LoginButton';
 import SignupButton from '../components/SignupButton';
 import SwapWrapper from 'src/components/SwapWrapper';
 import Image from 'next/image';
 import meetMochi from '../images/meet-mochi.png';
+import migglesLogo from '../images/miggles-logo.png';
 
 export default function Page() {
   const { address } = useAccount();
@@ -27,7 +27,7 @@ export default function Page() {
             target="_blank"
             rel="noreferrer"
           >
-            <OnchainkitSvg />
+            <Image src={migglesLogo} alt="Miggles Logo" width={50} height={50} />
           </a>
           <div className="flex items-center gap-3">
             <SignupButton />
@@ -35,18 +35,14 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="templateSection flex w-full flex-col items-center justify-center gap-4 rounded-xl bg-[#FF9D49] px-4 py-12 md:grow">
+      <section className="templateSection flex w-full flex-col items-center justify-center gap-4 rounded-xl bg-[#0052FF] px-4 py-12 md:grow">
         <div className="flex w-full items-center justify-center mt-[-50px] mb-[-20px]">
-          <Image src={meetMochi} alt="Welcome to Mochi" width={500} height={200} fill={false} style={{objectFit: "contain"}} />
-        </div>
-        <div className="flex w-full items-center justify-center mt-[-50px] mb-[-20px]">
-          <p className="text-2xl font-bold mt-[20px] mb-[20px] text-black">The cutest cat community</p>
+          <p className="text-4xl font-bold mt-[20px] mb-[20px] text-white">$MIGGLES SWAP</p>
         </div>
         <div className="z-10 flex w-full items-center justify-center mt-[10x]">
           <SwapWrapper />
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

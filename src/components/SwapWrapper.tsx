@@ -52,7 +52,7 @@ export default function SwapComponents() {
           token={MochiToken} 
           type="to"
         /> 
-        <SwapButton className='bg-[#FF9D49] text-white'/> 
+        <SwapButton className='bg-[#0052FF] text-white'/> 
         <SwapMessage /> 
       </Swap> 
     ) : (
