@@ -31,7 +31,7 @@ export default function SwapComponents() {
       decimals: 6,
       name: "Mister Miggles",
       symbol: "MIGGLES",
-      image: "https://s2.coinmarketcap.com/static/img/coins/64x64/28478.png"
+      image: "https://i.ibb.co.com/CmxSVFc/IMG-0263.png"
   };
  
   const swappableTokens: Token[] = [ETHToken, MochiToken];
