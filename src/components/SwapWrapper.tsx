@@ -26,11 +26,11 @@ export default function SwapComponents() {
   };
  
   const MochiToken: Token = {
-      address: "0xf6e932ca12afa26665dc4dde7e27be02a7c02e50",
+      address: "0xB1a03EdA10342529bBF8EB700a06C60441fEf25d",
       chainId: 8453,
       decimals: 6,
-      name: "Mochi",
-      symbol: "MOCHI",
+      name: "Mister Miggles",
+      symbol: "MIGGLES",
       image: "https://s2.coinmarketcap.com/static/img/coins/64x64/28478.png"
   };
  
