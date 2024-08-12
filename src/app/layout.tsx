@@ -19,7 +19,7 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Community Swap',
+  title: '$Miggles Swap',
   description: 'Built with OnchainKit',
   openGraph: {
     title: 'Community Swap',
